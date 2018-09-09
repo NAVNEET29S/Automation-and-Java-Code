@@ -1,0 +1,46 @@
+package com.datadriven.freamework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+
+public class TestMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	     	 System.setProperty("webdriver.chrome.driver" , "C:\\Users\\SinghN3\\Desktop\\Selinium Jars 3.0\\chromedriver.exe");
+	     	WebDriver driver = new ChromeDriver();
+			  driver = new ChromeDriver();
+			  driver.manage().window().maximize();
+			  Thread.sleep(2000);
+			  driver.get("http://www.facebook.com"); 
+			  
+		
+		XlsReader reader = new XlsReader("C:\\Users\\SinghN3\\eclipse-workspace\\Selenium1\\TestData.xlsx");
+		
+	int rCount =	reader.getRowCount("sheet1");
+	int cCount =    reader.getColumnCount("sheet1");
+	
+	System.out.println(rCount);
+    System.out.println(cCount);	
+	for (int i = 2; i <= (rCount); i++) {
+		
+	String userName =	reader.getCellData("sheet1", 1, i);
+	String password = reader.getCellData("sheet1", 2, i);
+	
+	WebElement user = driver.findElement(By.xpath("//input[@type='text']"));
+	WebElement pass = driver.findElement(By.xpath("//input[@type='text']//following::input[1]"));
+	
+	user.clear();
+	pass.clear();
+	user.sendKeys(userName);
+	pass.sendKeys(password);
+	
+		
+		
+	}
+		
+	}	
+}	

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Cancel" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="cancel"/>
+			<item value="cancelchnage"/>
+			<item value="//*[text()=&apos;100 International Minutes&apos;]//following::div[1]"/>
+			<item value="isEnabled"/>
+			<item value="remove"/>
+			<item value="//h2[@class=&apos;heading--2-S10 s-medium&apos;]"/>
+			<item value="In maven"/>
+			<item value="billing"/>
+			<item value="billing address"/>
+			<item value="className(&quot;button-primary--32J2U size-small--3crwC standard--2a2JQ shadow--3dzTD t-dark&quot;"/>
+			<item value="put"/>
+			<item value="commons"/>
+			<item value="commons.io"/>
+			<item value="io"/>
+			<item value="selectThisPlan"/>
+		</list>
+		<list key="replacehistory">
+			<item value="isDisplayed"/>
+			<item value="xpath(//*[@class=&quot;button-primary--32J2U size-small--3crwC standard--2a2JQ shadow--3dzTD t-dark&quot;])"/>
+			<item value="add"/>
+			<item value=""/>
+			<item value="public WebElement"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="1044" key="DIALOG_X_ORIGIN"/>
+		<item value="170" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

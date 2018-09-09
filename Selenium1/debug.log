@@ -1,0 +1,9 @@
+[1026/204732:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[1026/204732:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[1026/204732:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[1026/204732:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[1026/204732:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[1026/204732:ERROR:exception_snapshot_win.cc(87)] thread ID 8364 not found in process
+[1026/204732:WARNING:crash_report_exception_handler.cc(56)] ProcessSnapshotWin::Initialize failed
+[1213/233811:ERROR:file_io.cc(41)] write: The pipe is being closed. (0xE8)
+[1214/010123:ERROR:file_io.cc(41)] write: The pipe is being closed. (0xE8)

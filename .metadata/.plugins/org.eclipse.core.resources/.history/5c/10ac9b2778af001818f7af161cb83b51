@@ -1,0 +1,53 @@
+package com.util;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.swing.text.SimpleAttributeSet;
+
+import org.apache.commons.io.FileUtils;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import com.baseclass.BaseClass;
+
+public class TakeScreenshot extends BaseClass 
+{
+	
+	public static String Screenshot(String testCaseName) throws Exception
+	{
+		
+	 File srcFile =   ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	 
+	 String destinationPath = System.getProperty("user.dir")+ "/test-output"+"/Screenshot/"++testCaseName +"_"+GetDateandTime()+".png";
+	 
+	 File destFile =  new File(destinationPath);
+	
+	FileUtils.copyFile(srcFile, destFile);
+	
+	return destinationPath;
+
+
+     }
+	
+	
+	public static String GetDateandTime()
+	{
+		SimpleDateFormat dateFormatTime = new SimpleDateFormat("hh-mm-ss");
+		SimpleDateFormat dateFormatDate = new SimpleDateFormat("dd-MMM-YYYY");
+
+		Date date = new Date();
+	    String x =dateFormatTime.format(date);
+	    String y = dateFormatDate.format(date);
+	    return x;
+	}
+	
+	
+	
+
+
+}
+
+

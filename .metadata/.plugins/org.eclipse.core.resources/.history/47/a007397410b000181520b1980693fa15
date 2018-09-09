@@ -1,0 +1,16 @@
+package inheritance;
+
+public class ConstructorInheritanceDemo 
+{
+
+	public static void main(String[] args) 
+	
+	{
+		
+		 {
+			 PermanentEmployee Obj = new PermanentEmployee();
+          }
+
+	}
+
+}

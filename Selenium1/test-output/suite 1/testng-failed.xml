@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite 1]">
+  <test thread-count="5" name="test(failed)">
+    <parameter name="plan" value="4GB"/>
+    <classes>
+      <class name="VOXI.VoxiOrder">
+        <methods>
+          <include name="LounchBrowser"/>
+          <include name="CloseBroser"/>
+          <include name="SelectPlan" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- VOXI.VoxiOrder -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [suite 1] -->

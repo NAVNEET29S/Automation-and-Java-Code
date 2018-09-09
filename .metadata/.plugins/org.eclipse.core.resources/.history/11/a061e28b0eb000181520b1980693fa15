@@ -1,0 +1,29 @@
+package inheritance;
+
+public class Person {
+	
+	 Person()
+     {
+              System.out.println("Constructor of person class");
+      }
+
+}
+
+
+class Employee extends Person
+{
+     Employee()
+     {
+              System.out.println("Constructor of employee class");
+      }
+}
+
+
+class PermanentEmployee extends Employee
+{
+     PermanentEmployee()
+     {
+              System.out.println("Constructor of permanent employee class");
+      }
+}
+

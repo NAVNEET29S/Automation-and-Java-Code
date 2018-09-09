@@ -1,0 +1,70 @@
+package VOXI;
+
+import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
+public class VoxiOrder 
+{
+	
+	WebDriver driver;
+	
+	
+	 @Parameters("plan")
+	  @Test
+	  public void SelectPlan(String plan ) {
+		 
+		driver.findElement(By.xpath("//a[@href = '/plans']/span")).click();
+		   
+		  if(plan.equals("4GB"))
+			  
+		  {
+			   driver.findElement(By.xpath("//li[@id='react-tabs-4']")).click(); 		
+		  		
+		  }
+		  
+		  if(plan.equals("10GB"))
+		  {
+			  driver.findElement(By.xpath("//li[@id='react-tabs-6']")).click();  	
+		  }
+		  
+		  if(plan.equals("30GB"))
+		  {
+			  driver.findElement(By.xpath("//li[@id='react-tabs-8']")).click();  	
+		  }
+		  
+		  driver.findElement(By.xpath("//')]button[@type='button']//following::span[contains(text() , 'Get this plan")).click();
+		  
+		
+	  		  	}
+
+
+
+		
+  @BeforeTest
+  public void LounchBrowser() {	  
+	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\SinghN3\\Desktop\\Selinium Jars 3.0\\chromedriver.exe");	 
+	 driver = new ChromeDriver();
+	 driver.manage().window().maximize();
+	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	 driver.manage().deleteAllCookies();
+	 driver.get("https://fut.digitalx-sit1.svc.vodafoneaws.co.uk/");
+	// driver.findElement(By.xpath("//span[contains(text() , 'I agree'")).click();
+
+	 
+  }
+  
+	 @AfterTest
+	 public void CloseBroser()
+	 {
+		//driver.close(); 
+	 }
+	 
+  }
+
+  
