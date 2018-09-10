@@ -15274,3 +15274,8 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2018-09-09 16:32:01,221 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SinghN3\eclipse-workspace\datadrivenframework\src\main\resources
 2018-09-09 16:32:01,225 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-09 16:32:01,226 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SinghN3\eclipse-workspace\datadrivenframework\src\test\resources
+2018-09-10 14:14:20,864 [Worker-7: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-10 14:14:33,108 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-10 14:14:33,109 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SinghN3\eclipse-workspace\datadrivenframework\src\main\resources
+2018-09-10 14:14:33,113 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-10 14:14:33,113 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SinghN3\eclipse-workspace\datadrivenframework\src\test\resources
